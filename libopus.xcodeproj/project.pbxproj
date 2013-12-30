@@ -398,7 +398,7 @@
 		8BF0A18618710C2500BB389D /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
 		8BF0A18718710C2500BB389D /* VAD.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VAD.c; sourceTree = "<group>"; };
 		8BF0A18818710C2500BB389D /* VQ_WMat_EC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VQ_WMat_EC.c; sourceTree = "<group>"; };
-		8BF0A20E187116AB00BB389D /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		8BF0A20E187116AB00BB389D /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -455,7 +455,7 @@
 				8B26D9CF187230EA008020B5 /* test_opus_padding.c */,
 			);
 			name = tests;
-			path = ../../tests;
+			path = ../libopus/tests;
 			sourceTree = "<group>";
 		};
 		8B8690EA18710A4500F7B10F = {
@@ -496,7 +496,7 @@
 				8B86912218710B3100F7B10F /* src */,
 				8BF0A0E418710C2500BB389D /* silk */,
 			);
-			name = libopus;
+			path = libopus;
 			sourceTree = SOURCE_ROOT;
 		};
 		8B86911C18710B0000F7B10F /* include */ = {
@@ -508,8 +508,7 @@
 				8B86912018710B0000F7B10F /* opus_multistream.h */,
 				8B86912118710B0000F7B10F /* opus_types.h */,
 			);
-			name = include;
-			path = ../include;
+			path = include;
 			sourceTree = "<group>";
 		};
 		8B86912218710B3100F7B10F /* src */ = {
@@ -533,8 +532,7 @@
 				8B86913218710B3100F7B10F /* repacketizer_demo.c */,
 				8B86913318710B3100F7B10F /* tansig_table.h */,
 			);
-			name = src;
-			path = ../src;
+			path = src;
 			sourceTree = "<group>";
 		};
 		8B86914118710BCB00F7B10F /* celt */ = {
@@ -589,8 +587,7 @@
 				8B86918518710BCB00F7B10F /* vq.h */,
 				8B86918618710BCB00F7B10F /* x86 */,
 			);
-			name = celt;
-			path = ../celt;
+			path = celt;
 			sourceTree = "<group>";
 		};
 		8B86918618710BCB00F7B10F /* x86 */ = {
@@ -702,8 +699,7 @@
 				8BF0A18718710C2500BB389D /* VAD.c */,
 				8BF0A18818710C2500BB389D /* VQ_WMat_EC.c */,
 			);
-			name = silk;
-			path = ../silk;
+			path = silk;
 			sourceTree = "<group>";
 		};
 		8BF0A12218710C2500BB389D /* float */ = {
@@ -1028,9 +1024,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"../silk\"",
-					"\"../celt\"",
-					"\"../include\"",
+					"\"libopus/include\"",
 				);
 				INFOPLIST_FILE = "libopus Tests/libopus Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1053,9 +1047,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"../silk\"",
-					"\"../celt\"",
-					"\"../include\"",
+					"\"libopus/include\"",
 				);
 				INFOPLIST_FILE = "libopus Tests/libopus Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1099,8 +1091,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"../silk\"",
-					"\"../celt\"",
+					"\"libopus/silk\"",
+					"\"libopus/celt\"",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1137,8 +1129,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"../silk\"",
-					"\"../celt\"",
+					"\"libopus/silk\"",
+					"\"libopus/celt\"",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
@@ -1188,6 +1180,7 @@
 				8B26D9C7187230B8008020B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B8690EE18710A4500F7B10F /* Build configuration list for PBXProject "libopus" */ = {
 			isa = XCConfigurationList;
