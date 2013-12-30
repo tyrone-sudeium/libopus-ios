@@ -1865,7 +1865,7 @@ int test_malloc_fail(void)
 #endif
 #endif
 
-int main(int _argc, char **_argv)
+int test_opus_api_main(int _argc, char **_argv)
 {
    opus_int32 total;
    const char * oversion;

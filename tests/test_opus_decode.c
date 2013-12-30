@@ -416,7 +416,7 @@ void test_soft_clip(void)
 }
 #endif
 
-int main(int _argc, char **_argv)
+int test_opus_decode_main(int _argc, char **_argv)
 {
    const char * oversion;
    const char * env_seed;

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B26D9B7187230B8008020B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B26D9B6187230B8008020B5 /* XCTest.framework */; };
+		8B26D9B8187230B8008020B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8690F618710A4500F7B10F /* Foundation.framework */; };
+		8B26D9BA187230B8008020B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B26D9B9187230B8008020B5 /* UIKit.framework */; };
+		8B26D9C0187230B8008020B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B26D9BE187230B8008020B5 /* InfoPlist.strings */; };
+		8B26D9C2187230B8008020B5 /* libopus_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B26D9C1187230B8008020B5 /* libopus_Tests.m */; };
+		8B26D9D0187230EA008020B5 /* run_vectors.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8B26D9CA187230EA008020B5 /* run_vectors.sh */; };
+		8B26D9D1187230EA008020B5 /* test_opus_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B26D9CB187230EA008020B5 /* test_opus_api.c */; };
+		8B26D9D2187230EA008020B5 /* test_opus_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B26D9CD187230EA008020B5 /* test_opus_decode.c */; };
+		8B26D9D3187230EA008020B5 /* test_opus_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B26D9CE187230EA008020B5 /* test_opus_encode.c */; };
+		8B26D9D4187230EA008020B5 /* test_opus_padding.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B26D9CF187230EA008020B5 /* test_opus_padding.c */; };
+		8B26D9D518723542008020B5 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8690F318710A4500F7B10F /* libopus.a */; };
 		8B8690F718710A4500F7B10F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8690F618710A4500F7B10F /* Foundation.framework */; };
 		8B86913418710B3100F7B10F /* analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B86912318710B3100F7B10F /* analysis.c */; };
 		8B86913518710B3100F7B10F /* mlp.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B86912518710B3100F7B10F /* mlp.c */; };
@@ -149,6 +160,16 @@
 		8BF0A20C18710C2500BB389D /* VQ_WMat_EC.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0A18818710C2500BB389D /* VQ_WMat_EC.c */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8B26D9C4187230B8008020B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B8690EB18710A4500F7B10F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B8690F218710A4500F7B10F;
+			remoteInfo = libopus;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		8B8690F118710A4500F7B10F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -162,6 +183,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8B26D9B5187230B8008020B5 /* libopus Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libopus Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B26D9B6187230B8008020B5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8B26D9B9187230B8008020B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8B26D9BD187230B8008020B5 /* libopus Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libopus Tests-Info.plist"; sourceTree = "<group>"; };
+		8B26D9BF187230B8008020B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B26D9C1187230B8008020B5 /* libopus_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libopus_Tests.m; sourceTree = "<group>"; };
+		8B26D9C3187230B8008020B5 /* libopus Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libopus Tests-Prefix.pch"; sourceTree = "<group>"; };
+		8B26D9CA187230EA008020B5 /* run_vectors.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run_vectors.sh; sourceTree = "<group>"; };
+		8B26D9CB187230EA008020B5 /* test_opus_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_opus_api.c; sourceTree = "<group>"; };
+		8B26D9CC187230EA008020B5 /* test_opus_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_opus_common.h; sourceTree = "<group>"; };
+		8B26D9CD187230EA008020B5 /* test_opus_decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_opus_decode.c; sourceTree = "<group>"; };
+		8B26D9CE187230EA008020B5 /* test_opus_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_opus_encode.c; sourceTree = "<group>"; };
+		8B26D9CF187230EA008020B5 /* test_opus_padding.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_opus_padding.c; sourceTree = "<group>"; };
 		8B8690F318710A4500F7B10F /* libopus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopus.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8690F618710A4500F7B10F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B86911D18710B0000F7B10F /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
@@ -368,6 +402,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8B26D9B2187230B8008020B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B26D9D518723542008020B5 /* libopus.a in Frameworks */,
+				8B26D9B7187230B8008020B5 /* XCTest.framework in Frameworks */,
+				8B26D9BA187230B8008020B5 /* UIKit.framework in Frameworks */,
+				8B26D9B8187230B8008020B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B8690F018710A4500F7B10F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,10 +424,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B26D9BB187230B8008020B5 /* libopus Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8B26D9C9187230EA008020B5 /* tests */,
+				8B26D9C1187230B8008020B5 /* libopus_Tests.m */,
+				8B26D9BC187230B8008020B5 /* Supporting Files */,
+			);
+			path = "libopus Tests";
+			sourceTree = "<group>";
+		};
+		8B26D9BC187230B8008020B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B26D9BD187230B8008020B5 /* libopus Tests-Info.plist */,
+				8B26D9BE187230B8008020B5 /* InfoPlist.strings */,
+				8B26D9C3187230B8008020B5 /* libopus Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B26D9C9187230EA008020B5 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				8B26D9CA187230EA008020B5 /* run_vectors.sh */,
+				8B26D9CB187230EA008020B5 /* test_opus_api.c */,
+				8B26D9CC187230EA008020B5 /* test_opus_common.h */,
+				8B26D9CD187230EA008020B5 /* test_opus_decode.c */,
+				8B26D9CE187230EA008020B5 /* test_opus_encode.c */,
+				8B26D9CF187230EA008020B5 /* test_opus_padding.c */,
+			);
+			name = tests;
+			path = ../../tests;
+			sourceTree = "<group>";
+		};
 		8B8690EA18710A4500F7B10F = {
 			isa = PBXGroup;
 			children = (
 				8B8690F818710A4500F7B10F /* libopus */,
+				8B26D9BB187230B8008020B5 /* libopus Tests */,
 				8B8690F518710A4500F7B10F /* Frameworks */,
 				8B8690F418710A4500F7B10F /* Products */,
 			);
@@ -392,6 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				8B8690F318710A4500F7B10F /* libopus.a */,
+				8B26D9B5187230B8008020B5 /* libopus Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -400,6 +481,8 @@
 			isa = PBXGroup;
 			children = (
 				8B8690F618710A4500F7B10F /* Foundation.framework */,
+				8B26D9B6187230B8008020B5 /* XCTest.framework */,
+				8B26D9B9187230B8008020B5 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -667,6 +750,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8B26D9B4187230B8008020B5 /* libopus Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B26D9C8187230B8008020B5 /* Build configuration list for PBXNativeTarget "libopus Tests" */;
+			buildPhases = (
+				8B26D9B1187230B8008020B5 /* Sources */,
+				8B26D9B2187230B8008020B5 /* Frameworks */,
+				8B26D9B3187230B8008020B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B26D9C5187230B8008020B5 /* PBXTargetDependency */,
+			);
+			name = "libopus Tests";
+			productName = "libopus Tests";
+			productReference = 8B26D9B5187230B8008020B5 /* libopus Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8B8690F218710A4500F7B10F /* libopus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B86911618710A4500F7B10F /* Build configuration list for PBXNativeTarget "libopus" */;
@@ -692,6 +793,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Xiph.org/Sudeium;
+				TargetAttributes = {
+					8B26D9B4187230B8008020B5 = {
+						TestTargetID = 8B8690F218710A4500F7B10F;
+					};
+				};
 			};
 			buildConfigurationList = 8B8690EE18710A4500F7B10F /* Build configuration list for PBXProject "libopus" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -706,11 +812,36 @@
 			projectRoot = "";
 			targets = (
 				8B8690F218710A4500F7B10F /* libopus */,
+				8B26D9B4187230B8008020B5 /* libopus Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8B26D9B3187230B8008020B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B26D9C0187230B8008020B5 /* InfoPlist.strings in Resources */,
+				8B26D9D0187230EA008020B5 /* run_vectors.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		8B26D9B1187230B8008020B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B26D9C2187230B8008020B5 /* libopus_Tests.m in Sources */,
+				8B26D9D2187230EA008020B5 /* test_opus_decode.c in Sources */,
+				8B26D9D4187230EA008020B5 /* test_opus_padding.c in Sources */,
+				8B26D9D3187230EA008020B5 /* test_opus_encode.c in Sources */,
+				8B26D9D1187230EA008020B5 /* test_opus_api.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B8690EF18710A4500F7B10F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -859,7 +990,80 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8B26D9C5187230B8008020B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B8690F218710A4500F7B10F /* libopus */;
+			targetProxy = 8B26D9C4187230B8008020B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B26D9BE187230B8008020B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B26D9BF187230B8008020B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		8B26D9C6187230B8008020B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libopus Tests/libopus Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"../silk\"",
+					"\"../celt\"",
+					"\"../include\"",
+				);
+				INFOPLIST_FILE = "libopus Tests/libopus Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8B26D9C7187230B8008020B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libopus Tests/libopus Tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"../silk\"",
+					"\"../celt\"",
+					"\"../include\"",
+				);
+				INFOPLIST_FILE = "libopus Tests/libopus Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		8B86911418710A4500F7B10F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -977,6 +1181,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8B26D9C8187230B8008020B5 /* Build configuration list for PBXNativeTarget "libopus Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B26D9C6187230B8008020B5 /* Debug */,
+				8B26D9C7187230B8008020B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8B8690EE18710A4500F7B10F /* Build configuration list for PBXProject "libopus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
