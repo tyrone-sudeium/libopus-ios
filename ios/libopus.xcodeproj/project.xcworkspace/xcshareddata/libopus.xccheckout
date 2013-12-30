@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3F5B3F87-9946-40E3-8B35-9832E7077414</string>
+	<key>IDESourceControlProjectName</key>
+	<string>libopus</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DDEE0959-E858-4B75-8D91-8073E718B9D6</key>
+		<string>ssh://github.com/tyrone-sudeium/libopus-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios/libopus/libopus.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DDEE0959-E858-4B75-8D91-8073E718B9D6</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/tyrone-sudeium/libopus-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DDEE0959-E858-4B75-8D91-8073E718B9D6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DDEE0959-E858-4B75-8D91-8073E718B9D6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>libopus-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
