@@ -8,11 +8,16 @@ direction.
 
 Usage
 -----
-Until I can be bothered putting it in the master repo, you can reference it
-with a direct link to the podspec:
+Until I can be bothered putting it in the master repo, you'll need to add my
+spec repo to CocoaPods before you can use it.
 
+```bash
+$ pod repo add xiph-ios-podspecs https://github.com/tyrone-sudeium/xiph-ios-podspecs.git
+```
+
+Add it to your `Podfile`
 ```ruby
-pod 'libopus-ios', :podspec => 'https://raw.github.com/tyrone-sudeium/libopus-ios/master/libopus-ios.podspec'
+pod 'libopus-ios', '~> 1.1'
 ```
 
 See Also
