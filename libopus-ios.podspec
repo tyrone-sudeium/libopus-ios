@@ -5,8 +5,11 @@ Pod::Spec.new do |s|
   s.homepage = "http://www.opus-codec.org"
   s.license = 'BSD'
   s.authors = { "Tyrone Trevorrow" => "tyrone@sudeium.com", "Xiph.org" => "opus@xiph.org"}
-  s.source = { :git => "https://github.com/tyrone-sudeium/libopus-ios", :tag => '1.1'}
+  s.source = { :git => "https://github.com/tyrone-sudeium/libopus-ios.git", :tag => '1.1'}
   s.ios.deployment_target = '6.0' # We're compiling arm64, so I think 6.0 minimum is needed
-  s.source_files = 'libopus/{celt,silk,src}/*.{h,c}'
+  s.source_files = 'config.h', 'libopus/{celt,silk,src,include}/*.{h,c}',
+                   'libopus/**/float/*.{h,c}'
   s.public_header_files = 'libopus/include/*.h'
+  s.header_mappings_dir = 'libopus'
+  s.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'HAVE_CONFIG_H=1' }
 end
